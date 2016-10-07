@@ -6,11 +6,11 @@
         <script src="https://use.fontawesome.com/b0d6fa1c9f.js"></script>
         <script type="text/javascript" src="assets/wiki_viewer.js"></script>
     </head>
-    <body>
+    <body onkeydown="focusOnSearch()">
         <div id="search_box">
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button title = "Random page" class="fa fa-random btn"></button></a>
-            <input type="text" id="search_field" placeholder="Search on the Wiki">
-            <button type="submit" id="search_btn" onclick="search()" class="fa fa-search btn"></button>
+            <button title = "Random page" onclick = "goRandom()" class="fa fa-random myBtn"></button>
+            <input type="text" id="search_field" onkeyup="keyOnSearch(event)" placeholder="Search on the Wiki">
+            <button type="submit" id="search_btn" onclick="search()" class="fa fa-search myBtn"></button>
         </div>
         <div id="base-snippet" class="snippet"></div>
     </body>
