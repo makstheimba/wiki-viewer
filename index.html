@@ -3,13 +3,16 @@
     <head>
         <title>Wiki Viewer</title>
         <link rel="stylesheet" href="assets/wiki_viewer_style.css">
+        <script src="https://use.fontawesome.com/b0d6fa1c9f.js"></script>
         <script type="text/javascript" src="assets/wiki_viewer.js"></script>
     </head>
     <body>
-        <input type="text" id="search_field" placeholder="Search on the Wiki">
-        <input type="submit" id="search_btn" onclick="search()">
-        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><img alt="random page" src="#"></a>
-        <div id="wiki-page"></div>
+        <div id="search_box">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button title = "Random page" class="fa fa-random btn"></button></a>
+            <input type="text" id="search_field" placeholder="Search on the Wiki">
+            <button type="submit" id="search_btn" onclick="search()" class="fa fa-search btn"></button>
+        </div>
+        <div id="base-snippet" class="snippet"></div>
     </body>
 </html>
 
