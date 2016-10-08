@@ -1,6 +1,3 @@
-//TODO:
-//Styling at small screens
-
 function response_handle() {
     var response = JSON.parse(this.responseText),
         more_btn = document.getElementById("more_btn");
@@ -75,6 +72,3 @@ function keyOnSearch(event) {
 function focusOnSearch() {
     document.getElementById("search_field").focus();
 }
-window.onload = function () {
-    
-};
