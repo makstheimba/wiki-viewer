@@ -65,11 +65,11 @@ function infoRequestHandle(){
     console.log(response);
     for (var key in response.query.pages){
         entry = response.query.pages[key];
-        console.log(entry);
         if (response.query.pages.hasOwnProperty(key)){
-            console.log(entry.title);
             nw = document.getElementById("base-snippet").cloneNode();
-            nw.onclick = function () {window.open("https://en.wikipedia.org/wiki/" + entry.title, "_blank"); };
+            nw.addEventListener("click", function () {
+                window.open("https://en.wikipedia.org/wiki/" + this.firstChild.innerHTML, "_blank"); 
+            });
             nw.removeAttribute("id");
             nw.className += " search-entry";
             nw.style.display = "block";
