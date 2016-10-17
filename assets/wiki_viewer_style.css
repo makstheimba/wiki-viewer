@@ -51,13 +51,10 @@ h3{
 #search_field{
     height: 30px;
     font-size: 20px;
-    margin-left: -4px;
     border: groove none;
 }
 
-#search_btn{
-    margin-left: -4px;
-}
+
 @media (max-width: 450px){
     #search_field, #more_btn{
         width: 200px;
