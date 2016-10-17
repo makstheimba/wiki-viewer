@@ -12,6 +12,9 @@ h3{
     margin: 0;
     margin-bottom: 10px;
 }
+b {
+    font-weight: normal;
+}
 .myBtn{
     height: 36px;
     width: 40px;
